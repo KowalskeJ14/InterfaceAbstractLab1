@@ -20,8 +20,8 @@ public class InterfaceAbstractLab1 {
         Course introJava = new IntroJava("Introduction to Java", "2");
         Course advJava = new AdvJava("Advanced Java", "3");
         
-        
-        System.out.println();
+        introProg.setCredits(3.0);
+        System.out.println(introProg.getCourseName());
     }
     
 }

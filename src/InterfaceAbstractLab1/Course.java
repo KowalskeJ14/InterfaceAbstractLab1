@@ -28,5 +28,7 @@ public abstract class Course {
         return this.getCourseName().toUpperCase();
     }
     
-    public abstract void testCredits();
+    public abstract void setCredits(double c);
+    public abstract double getCredits();
+    public abstract void testCredits(double credits);
 }
