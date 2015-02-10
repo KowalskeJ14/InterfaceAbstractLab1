@@ -21,7 +21,9 @@ public class InterfaceAbstractLab1 {
         Course advJava = new AdvJava("Advanced Java", "3");
         
         introProg.setCredits(3.0);
-        System.out.println(introProg.getCourseName());
+        System.out.println(introProg.getCredits());
+        System.out.println(advJava.getCapitalizedCourseName());
+        System.out.println(introJava.getCourseNumber());
     }
     
 }

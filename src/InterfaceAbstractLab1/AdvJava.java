@@ -15,6 +15,7 @@ public class AdvJava extends Course{
         this.setCourseNumber(courseNumber);
     }
     
+    @Override
     public double getCredits() {
         return credits;
     }
@@ -27,6 +28,7 @@ public class AdvJava extends Course{
         this.prerequisites = prerequisites;
     }
 
+    @Override
     public void setCredits(double credits) {
         this.credits = credits;
     }
