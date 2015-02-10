@@ -16,11 +16,12 @@ public class InterfaceAbstractLab1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Course introProgramming = new IntroToProgramming();
-        Course introJava = new IntroJava();
-        Course advancedJava = new AdvJava();
+        Course introProg = new IntroToProgramming("Introduction to Programming", "1");
+        Course introJava = new IntroJava("Introduction to Java", "2");
+        Course advJava = new AdvJava("Advanced Java", "3");
         
         
+        System.out.println();
     }
     
 }

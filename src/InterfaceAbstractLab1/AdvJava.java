@@ -1,24 +1,44 @@
 package InterfaceAbstractLab1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author kowal_000
  */
 public class AdvJava extends Course{
-
-    @Override
-    public void setCourseNumber(String courseNumber) {
-        
-    }
-
-    @Override
-    public void setCredits(double credits) {
-        
-    }
-
-    @Override
-    public void setCourseName(String courseName) {
-        
+    private double credits;
+    private String prerequisites;
+    
+    public AdvJava(String courseName, String courseNumber){
+        this.setCourseName(courseName);
+        this.setCourseNumber(courseNumber);
     }
     
+    public double getCredits() {
+        return credits;
+    }
+
+    public String getPrerequisites() {
+        return prerequisites;
+    }
+
+    public void setPrerequisites(String prerequisites) {
+        this.prerequisites = prerequisites;
+    }
+
+    public void setCredits(double credits) {
+        testCredits();
+        this.credits = credits;
+    }
+
+    @Override
+    public void testCredits() {
+        if(credits < 0.5 || credits > 4.0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: credits must be in the range 0.5 to 4.0");
+            System.exit(0);
+        }
+        this.setCredits(credits);
+    }
 }

@@ -7,33 +7,26 @@ package InterfaceAbstractLab1;
 public abstract class Course {
     private String courseName;
     private String courseNumber;
-    private double credits;
-    private String prerequisites;
-    
-    public String getCourseNumber() {
-        return courseNumber;
-    }
-
-    public abstract void setCourseNumber(String courseNumber);
-
-    public final double getCredits() {
-        return credits;
-    }
-
-    public abstract void setCredits(double credits);
 
     public final String getCourseName() {
         return courseName;
     }
 
-    public abstract void setCourseName(String courseName);
+    public final void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public final String getCourseNumber() {
+        return courseNumber;
+    }
+
+    public final void setCourseNumber(String courseNumber) {
+        this.courseNumber = courseNumber;
+    }
     
-    public final String getCapitalizedCourseName() {
+    public final String getCapitalizedCourseName(){
         return this.getCourseName().toUpperCase();
     }
-
-    public final String getPrerequisites() {
-        return prerequisites;
-    }
-
+    
+    public abstract void testCredits();
 }
